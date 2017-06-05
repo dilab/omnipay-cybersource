@@ -22,6 +22,6 @@
         "omnipay/tests": "~2.0"
     },
     "autoload": {
-        "psr-4": { "Omnipay\\Cybersource\\" : "src/" }
+        "psr-4": { "Dilab\\Cybersource\\" : "src/" }
     }
 }
