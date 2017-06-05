@@ -1,0 +1,27 @@
+{
+    "name": "dilab/omnipay-cybersource",
+    "description": "Cybersource gateway for Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "cybersource",
+        "omnipay"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xu ding",
+            "email": "thedilab@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "autoload": {
+        "psr-4": { "Omnipay\\Cybersource\\" : "src/" }
+    }
+}
