@@ -1,5 +1,5 @@
 <?php
-namespace Dilab\Cybersource\Message;
+namespace Omnipay\Cybersource\Message;
 
 use Omnipay\Common\Message\RequestInterface;
 

@@ -2,7 +2,7 @@
 
 namespace Omnipay\Cybersource;
 
-use Dilab\Cybersource\Gateway;
+use Omnipay\Cybersource\Gateway;
 use Omnipay\Tests\GatewayTestCase;
 
 class GatewayTest extends GatewayTestCase
@@ -18,7 +18,7 @@ class GatewayTest extends GatewayTestCase
     {
         $request = $this->gateway->purchase(array('amount' => '10.00'));
 
-        $this->assertInstanceOf('Dilab\Cybersource\Message\PurchaseRequest', $request);
+        $this->assertInstanceOf('Omnipay\Cybersource\Message\PurchaseRequest', $request);
         $this->assertSame('10.00', $request->getAmount());
     }
 
@@ -26,7 +26,7 @@ class GatewayTest extends GatewayTestCase
     {
         $request = $this->gateway->completePurchase(array('amount' => '10.00'));
 
-        $this->assertInstanceOf('Dilab\Cybersource\Message\CompletePurchaseRequest', $request);
+        $this->assertInstanceOf('Omnipay\Cybersource\Message\CompletePurchaseRequest', $request);
         $this->assertSame('10.00', $request->getAmount());
     }
 
@@ -37,7 +37,7 @@ class GatewayTest extends GatewayTestCase
         'lastName' => 'The second',
       )))->send();
 
-      $this->assertInstanceOf('Dilab\Cybersource\Message\Response', $request);
+      $this->assertInstanceOf('Omnipay\Cybersource\Message\Response', $request);
       $this->assertTrue($request->isTransparentRedirect());
     }
 }

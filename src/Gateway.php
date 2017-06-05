@@ -1,5 +1,5 @@
 <?php
-namespace Dilab\Cybersource;
+namespace Omnipay\Cybersource;
 
 use Omnipay\Common\AbstractGateway;
 
@@ -30,21 +30,21 @@ class Gateway extends AbstractGateway
     /**
      *
      * @param array $parameters
-     * @return \Dilab\Cybersource\Message\PurchaseRequest
+     * @return \Omnipay\Cybersource\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest('\Dilab\Cybersource\Message\PurchaseRequest', $parameters);
+        return $this->createRequest('\Omnipay\Cybersource\Message\PurchaseRequest', $parameters);
     }
 
     /**
      *
      * @param array $parameters
-     * @return \Dilab\Cybersource\Message\CompletePurchaseRequest
+     * @return \Omnipay\Cybersource\Message\CompletePurchaseRequest
      */
     public function completePurchase(array $parameters = array())
     {
-        return $this->createRequest('\Dilab\Cybersource\Message\CompletePurchaseRequest', $parameters);
+        return $this->createRequest('\Omnipay\Cybersource\Message\CompletePurchaseRequest', $parameters);
     }
 
     public function getProfileId()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dilab\Cybersource\Message;
+namespace Omnipay\Cybersource\Message;
 
 /**
  * Cybersource Authorize Request
